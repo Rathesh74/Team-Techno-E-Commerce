@@ -114,8 +114,6 @@ function initApp() {
         let newDiv = document.createElement('div');
         newDiv.classList.add('prod');
         newDiv.innerHTML = `
-        <div id="product1" class="section-p1">
-        <div class="pro-container">
         <div class="pro">
         <img src="img/products/${value.image}" alt="Shirt">
         <div class="des">
@@ -131,8 +129,6 @@ function initApp() {
             <h4>₹${value.price.toLocaleString()}</h4>
         </div>
         <i class="bi bi-cart cart" onclick="addToCard(${key})"></i>
-    </div>
-    </div>
     </div>
     `;
         list.appendChild(newDiv);
