@@ -168,6 +168,7 @@ function reloadCard() {
         }
     });
     total.innerText = 'Total: ₹' + totalPrice.toLocaleString();
+    total.innerText = 'Buy Now'
     quantity.innerText = count;
 }
 
