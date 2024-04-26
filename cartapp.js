@@ -5,7 +5,6 @@ let listCard = document.querySelector('.listCard');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
-// Load products from Local Storage or use default if not available
 let products = JSON.parse(localStorage.getItem('products')) || [
     {
         id: 1,
@@ -168,7 +167,6 @@ function reloadCard() {
         }
     });
     total.innerText = 'Total: ₹' + totalPrice.toLocaleString();
-    total.innerText = 'Buy Now'
     quantity.innerText = count;
 }
 
@@ -196,4 +194,3 @@ openShopping.addEventListener('click', () => {
 closeShopping.addEventListener('click', () => {
     document.body.classList.remove('active');
 });
-
